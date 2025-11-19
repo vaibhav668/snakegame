@@ -129,7 +129,7 @@ while True:
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     results = None
 
-    if frame_idx % PROCESS_EVERY_N_FRAMES == 0:
+    if True:
         results = hands.process(rgb_frame)
 
         if results.multi_hand_landmarks:
@@ -220,3 +220,4 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 pygame.quit()
+
